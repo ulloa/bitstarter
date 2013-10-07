@@ -52,8 +52,18 @@
           border-top: 1px solid white;
         }
       }
-
-
+      @media screen {
+        #advert{
+        position: relative;
+        float: left;
+        display: block;
+        background-color: rgba(0, 0, 0, .40);
+        margin-left: 5px;
+        top: 50%;
+        left: 20%;
+        color: white;
+        }
+      }
       /* All form factors */
 
       /* Main body and headings */
@@ -168,12 +178,28 @@
         padding: 0;
       }
       .panel2 {
-        background-color: #A30504;
+        background-color: #ffffff;
+        width: auto;
+        height: 750px;
+        display: block;
+        color: black;
+      }
+      .panel3 {
+        background-color: #151515;
         width: auto;
         height: 400px;
         display: block;
         color: white;
       }
+      .ad-sm-7 {
+        position: relative;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        width: 58.333333333333%;
+        float: left;
+      }
+      
       .panel {
       margin-bottom: 0px;
       border: 0px;
@@ -208,7 +234,7 @@
     <div class="container">
       <div class="navbar-header">
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	  <span class="icon-bar"></span>
+	  <col-md- class="icon-bar"></span>
 	  <span class="icon-bar"></span>
 	  <span class="icon-bar"></span>
 	</button>
@@ -224,7 +250,6 @@
       </div><!--/.nav-collapse -->
     </div>
   </div>
-  
 
 
   <!-- We use row-fluid inside containers to achieve a resizable layout. -->
@@ -232,61 +257,38 @@
   <!-- http://stackoverflow.com/a/12270322 -->
   <div class="panel panel-default">
     <div class="hero-home">
+      <div class="ad-sm-7">
+	<div id="advert">
+	  <h1>Testing the advert id</h1>
+	</div>
+      </div>
     </div>
   </div>
 
-
+  
   <div class="panel panel-default">
     <div class="panel2">
       <div class="container"> 
-	<!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-	<!-- www.google.com/fonts/specimen/Ubuntu -->
-	<!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
 	<div class="row header">
-	  <div class="span12">
+	  <div class="col-sm-12">
 	    <h2 class="featurette-heading">Samuel Ulloa, a handy man of population analytics. Maps,&nbsp;statistics, surveys... <span class="text-muted">You&nbsp;got&nbsp;it!</span></h2>
 	    <p class="lead">I have worked in bioinformatics, public health, medicine, and politics. Better call Samuel</p>
 	    <p id="para2">Is this red?</p>
 	  </div>
 	</div>
-	<div class="row pitch">
-	  <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
-	  <div class="span5 actions">
-	    <div class="span8 offset2">
-	      <div class="statistics">
-		<div class="span4">
-		  <!-- linediv-l and linediv-r give dividing lines that look different in horizontal 
-		       and vertical layouts, illustrating media queries. -->
-		  <div class="linediv-l">
-		    <h3>0</h3> <p>backers</p>
-		  </div>
-		</div>
-		<div class="span4">
-		  <div class="linediv-c">
-		    <h3>$0</h3> <p>of $12,000</p>
-		  </div>
-		</div>
-		<div class="span4">
-		  <div class="linediv-r">
-		    <h3>30</h3> <p>days left</p>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-	    <div class="span10 offset1">
-	      <!-- Bootstrap progress barr -->
-	      <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-	      <div class="thermometer progress active">
-		<div class="bar bar-success" style="width: 60%;"></div>
-		<div class="bar bar-warning" style="width: 40%;"></div>
-	      </div>
-	    </div>
-	    <div class="span6 offset3 order">
-	      <!-- Standard Bootstrap button. -->
-	      <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-	      <button class="btn btn-success btn-large">Preorder</button>
-	    </div>
-	    <div class="span8 offset2 social">
+	<div class="row">
+	  <div class="col-sm-5">
+	    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis placerat porta. Curabitur pulvinar enim enim, vel iaculis massa. Vivamus at egestas metus. Suspendisse rutrum commodo sem eget semper. Integer vel consequat leo. Vivamus at enim enim, sed faucibus velit. Aliquam adipiscing, lacus quis sodales egestas, diam turpis vestibulum felis, non suscipit sem est a nulla. Sed non massa dolor. Etiam convallis enim non justo dictum interdum porta in nisl. Etiam commodo turpis ac felis ultrices accumsan.This graph shows my mad skills dfadfjasdlkfnlsdkangearpioteafkasdjf lorem ipsum siad i am a meta mers /b dfadfaldkjlkfaldknfalksdfaklsdfj /b sldkfjaldfjals</p>
+	  </div>
+	  <div class="col-sm-7">
+	    <img class="img-responsive" src="http://imgur.com/oSRpepl.png">
+	  </div>
+	</div>
+      </div>
+
+	<!-- <div class="row pitch">
+	  <div class="col-sm-5 actions">
+	    <div class="col-sm-8 col-sm-offset-2 social">
 	      <div class="coinbase">
 		<a class="coinbase-button" data-code="f419036293e6f7e36066c8b2e76779f7" data-button-style="custom_large" 
 		   href="https://coinbase.com/checkouts/f419036293e6f7e36066c8b2e76779f7">Pay With Bitcoin</a>
@@ -302,53 +304,57 @@
 	      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-524927a97bef6185"></script>
 	    </div>
 	  </div>
+	</div> -->
+    </div>
+  </div> <!-- panel2-->
+  <!-- Beyond this part the marketing copy begins. -->
+  <!-- https://developer.moziilla.org/en-US/docs/Web/CSS/text-align -->
+  <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+  <!-- http://placehold.it -->
+  <div class="panel panel-default">
+    <div class="panel3">
+      <div class="container"> 
+	<div class="row header">
+	  <div class="col-sm-5 copy">
+	    <p>
+	      Vivicheck is a smart software that assists in the diagnosis of the flu and cold. By inputting key 
+	      medical information, Vivicheck can produce a diagnosis with a level of significance, sensitivity, and
+	      specificity. Vivicheck will rely on information recorded by a smart mobile device and a picture. 
+	    </p>
+	  </div>
+	</div>
+	<div class="row section2">
+	  <div class="col-sm-5 col-sm-offset-1 copy copy-right">
+	    <p>
+	      Donations will be used to produce the user interface and to develop methods for modern levels of
+	      sensitivity and specificity. Vivicheck will be one of the first in mobile diagnostics reducing the costs
+	      of healthcare for people. Vivicheck will connect people with a positive diagnosis to a pharmacist to 
+	      obtain an appropriate medication to treat their illness. We hope to expand Vivichecks capabilities for
+	      several other diseases including bronchitis and calculating risk ratios for chronic disorders or 
+	      lethal diseases.
+	    </p>
+	  </div>
+	  <div class="col-sm-5 asset">
+	    <!--	<img class="img-polaroid" src="https://www.cellscope.com/assets/img_home_intro_device-f892c783530b711ae1c7e2bd33cd4ea9.jpg"> -->
+	    <img class="img-responsive" src="http://placehold.it/480x300">
+	  </div>
 	</div>
       </div>
     </div>
-  </div> <!-- panel2-->
-    <!-- Beyond this part the marketing copy begins. -->
-    <!-- https://developer.moziilla.org/en-US/docs/Web/CSS/text-align -->
-    <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-    <!-- http://placehold.it -->
-    <div class="row-fluid section1">
-      <div class="span5 offset1 asset">
-	<img class="img-responsive" src="http://shass.mit.edu/files/shass/cimg/560_diagnosis.jpg">
-      </div>
-      <div class="span5 copy">
-	<p>
-	  Vivicheck is a smart software that assists in the diagnosis of the flu and cold. By inputting key 
-	  medical information, Vivicheck can produce a diagnosis with a level of significance, sensitivity, and
-	  specificity. Vivicheck will rely on information recorded by a smart mobile device and a picture. 
-	</p>
-      </div>
-    </div>
-    <div class="row-fluid section2">
-      <div class="span5 offset1 copy copy-right">
-	<p>
-	  Donations will be used to produce the user interface and to develop methods for modern levels of
-	  sensitivity and specificity. Vivicheck will be one of the first in mobile diagnostics reducing the costs
-	  of healthcare for people. Vivicheck will connect people with a positive diagnosis to a pharmacist to 
-	  obtain an appropriate medication to treat their illness. We hope to expand Vivichecks capabilities for
-	  several other diseases including bronchitis and calculating risk ratios for chronic disorders or 
-	  lethal diseases.
-	</p>
-      </div>
-      <div class="span5 asset">
-	<!--	<img class="img-polaroid" src="https://www.cellscope.com/assets/img_home_intro_device-f892c783530b711ae1c7e2bd33cd4ea9.jpg"> -->
-	<img class="img-responsive" src="http://placehold.it/480x300">
-      </div>
-    </div>
-    <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-    <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-    <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-    <div class="row-fluid faq">
-      <div class="span10 offset1">
+  </div>
+
+  <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+  <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+  <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+  <div class="container">
+    <div class="row faq">
+      <div class="col-sm-10 col-sm-offset-1">
 	<h3>FAQ</h3>
 	<div class="accordion" id="accordion2">
 	  <div class="accordion-group">
 	    <div class="accordion-heading">
 	      <a class="accordion-toggle" data-toggle="collapse" 
-		data-parent="#accordion2" href="#collapseOne"> How much will Vivicheck cost?
+		 data-parent="#accordion2" href="#collapseOne"> How much will Vivicheck cost?
 	      </a>
 	    </div>
 	    <div id="collapseOne" class="accordion-body collapse">
@@ -403,11 +409,11 @@
     </div>
     <!-- Not crucial, but we put this uner a CC By-SA 3.0 license. -->
     <!-- http://creativecommons.org/licenses/ -->
-    <div class="row-fluid footer">
-      <div class="span12">
+    <div class="row footer">
+      <div class="col-sm-12">
 	<p>This work is licensed under 
 	  the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0
-	    </a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
+	  </a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
       </div>
     </div>
   </div>
