@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Samuel Ulloa | Population Analyst</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.png">
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -15,32 +14,23 @@
 
       /* Large desktop */
 
-      @media (min-width: 900px) {
+      @media (min-width: 960px) {
         .linediv-l {
           border-right: 2px solid white;
         }
         .linediv-r {
           border-left: 2px solid white;
         }
-      }
-
-      @media screen, handheld {
-        .hero-home {
-        background: url(http://www.google.org/images/hero.jpg) no-repeat center top fixed;
-        width: auto;
-        height: 400px;
-        display: block;
+        .heads {
+          font-size: 32px;
+          font-weight: bold;
         }
-        body {
-        height: 100%;
-        width: 100%;
-        padding: 0 0;
-        margin: 0 0;
+        .para {
+          font-size: 19px;
+          font-weight: 300;
         }
+
       }
-
-      /* Landscape phones and down */
-
       @media (max-width: 480px) {
         .copy {
           padding: 2.5% 10%;
@@ -51,28 +41,87 @@
         .linediv-r {
           border-top: 1px solid white;
         }
+        .heads {
+          font-size: 19px;
+          font-weight: 700;
+        }
+        .para {
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }        
+      @media (min-width: 481px) and (max-width: 768px) {
+        .heads {
+          font-size: 22px;
+          font-weight: 700;
+        }
+        .para {
+          font-size: 14px;
+          font-weight: 400;
+        }
       }
-      @media screen {
+      @media (min-width: 769px) and (max-width: 959px) {
+        .heads {
+          font-size: 27px;
+          font-weight: 700;
+        }
+        .para {
+          font-size: 17px;
+          font-weight: 200;
+        }
+      }
+      
+      @media (min-width: 481px) {
         #advert{
         position: relative;
         float: left;
         display: block;
-        background-color: rgba(0, 0, 0, .60);
-        margin-left: 5px;
-        top: 50%;
-        left: 25%;
+        height: 48%;
+        top: 52%;
+        width: 46%;
+        left: 5.5%;
         color: white;
+        z-index: 999;
+        }
+        #adtext{
+        width: 100%;
+        height: 85%;
+        max-height: 300px;
+        max-width: 600px;
+        padding: 15px 20px 20px;
+        top: 0;
+        background-color: rgba(15, 15, 15, .80);
+        border-radius: 30px;
+        z-index: 1000;
         }
       }
-      /* All form factors */
 
-      /* Main body and headings */
-      body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Open Sans";
-      position: relative;
-      padding-top: 40px;
+      @media (max-width: 480px) {
+        #advert{
+        position: relative;
+        float: left;
+        display: block;
+        height: 60%;
+        top: 40%;
+        color: white;
+        padding: 0 15px 20px;
+        padding-bottom: 20px;
+        }
+        #adtext{
+        width: 100%;
+        height: 90%;
+        top: 0;
+        background-color: rgba(15, 15, 15, .80);
+        border-radius: 30px;
+        }
       }
-
+      /* Main body and headings */
+      html, body{height: 100%;}
+      body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Open Sans";
+      position: relative;
+      height: 100%;
+      }
       .heading, .subheading {
         font-family: "Helvetica Neue", Helvetica, 'Ubuntu', Arial, sans-serif;
         text-align: center;
@@ -86,9 +135,6 @@
         font-size: 18px;
         line-height: 24px;
       }
-      
-      
-
       /* Video pitch and Action */
       .pitch {
         padding: 2.5% 0%;
@@ -141,14 +187,33 @@
       margin-bottom: 20px;
       position: static;
       }
-      @media (max-width: 767px)
-      .navbar-fixed-top {
-        margin-left: -20px;
-        margin-right: -20px;
+      @media (max-width: 768px) {
+        .navbar-fixed-top {
+          margin-left: -20px;
+          margin-right: -20px;
+        }
+        .bigbold {
+          font-weight: 700;
+          font-size: 30px;
+        }
+        .imgpan2 {
+          max-height: 20%;
+          height: auto;
+          width: 100%
+        }
       }
-      @media (min-width: 768) {
-        .featurette-heading: 45px;
+      @media (min-width: 769px) {
+        .bigbold {
+          font-weight: 700;
+          font-size: 46px;
+        }
       }
+      
+      .shrinking {
+        font-weight: 650;
+        font-size: 85%;
+      }
+
       .navbar-inner:after {
       display: table;
       content: "";
@@ -165,8 +230,7 @@
       overflow: visible;
       }
       .center {
-      margin-right: auto;
-      margin-left: auto;
+      text-align: center;
       }
       .featurette-heading {
         font-weight: 300;
@@ -177,41 +241,91 @@
         margin-left: 0px;
         padding: 0;
       }
-      .panel2 {
-        background-color: #ffffff;
-        width: auto;
-        height: auto;
-        display: block;
-        color: #050505;
-      }
-      .panel3 {
-        background-color: #151515;
-        width: auto;
-        height: auto;
-        display: block;
-        color: white;
-      }
-      .panel4 {
-        background-color: #ffffff;
-        width: auto;
-        height: auto;
-        display: block;
-        color: #050505;
-        border-bottom: thick solid #353535;
-      }
-      .ad-sm-7 {
-        position: relative;
-        height: 100%;
-        padding: 0;
+      .container {
         margin: 0;
-        width: 58.333333333333%;
-        float: left;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        max-width: 9999px;
+        height: 100%;
       }
-      
+      .row {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+      }
+
+<!-- Panel stuff -->
       .panel {
-      margin-bottom: 0px;
-      border: 0px;
+        margin-bottom: 0px;
+        border: 0px;
+        background-size: auto 100%;
+        background-position: center;
+        position: relative;
+        padding: 0px;
+        height: 100%;
+        overflow: hidden;
       }
+      #panel1 {
+        background-color: #ffffff;
+        width:f 100%;
+        height: 100%;
+        min-height: 100%;
+        display: block;
+        color: rgb(250, 250, 250);
+        top: 0%;
+        background: url(http://i.imgur.com/bONOi81.jpg) no-repeat center center;
+        webkit-background-size: cover;
+        background-size: cover;
+        z-index: 1000;
+        margin: 0px 0px -1px;
+        border: 0px;
+        padding: 0px;
+        border-radius: 0;
+        overflow: hidden;
+      }
+      #panel2 {
+        background-color: #ffffff;
+        height: 100%;
+        min-height: 100%;
+        display: block;
+        color: rgb(0, 0, 0);
+        top: 100%;
+        margin: 0px 0px -1px;
+        border: 0px;
+        padding: 0px;
+        z-index: 900;
+        border-radius: 0;
+        overflow: hidden;
+      }
+      #panel3 {
+        background-color: rgb(245, 130, 32);
+        height: 100%;
+        min-height: 100%;
+        display: block;
+        color: #ffffff;
+        top: 200%;
+        margin: 0px 0px -1px;
+        border: 0px;
+        padding: 0px;
+        z-index: 800;
+        border-radius: 0;
+        overflow: hidden;
+      }
+      #panel4 {
+        background-color: rgb(99, 100, 102);
+        height: 100%;
+        min-height: 100%;
+        display: block;
+        color: #ffffff;
+        border: 0px;
+        top: 300%;
+        margin: 0px 0px -1px;
+        padding: 0px;
+        z-index: 700;
+        border-radius: 0;
+        overflow: hidden;
+      }
+<!-- end of Panel stuff -->
       .accordion{margin-bottom:20px;}
       .accordion-group{margin-bottom:2px;border:1px solid #e5e5e5;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
       .accordion-heading{border-bottom:0;}
@@ -235,227 +349,57 @@
   </head>
 <body>
 
+<!-- Took out navbar because no other pages, might want to add later -->
 
-  <!-- Mobile-friendly navbar adapted from example. -->
-  <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	  <col-md- class="icon-bar"></span>
-	  <span class="icon-bar"></span>
-	  <span class="icon-bar"></span>
-	</button>
-	<a class="navbar-brand" href="#">Samuel Ulloa</a>
-      </div>
-      <div class="navbar-collapse collapse">
-	<ul class="nav navbar-nav">
-	  <li class="active"><a href="#">Home</a></li>
-	  <li><a href="#about">About</a></li>
-	  <li><a href="#projects">Projects</a></li>
-	  <li><a href="#contact">Contact</a></li>
-	  <li><a href="#faq">FAQ</a></li>
-	</ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-
-
-  <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-  <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-  <!-- http://stackoverflow.com/a/12270322 -->
-  <div class="panel panel-default">
-    <div class="hero-home">
-      <div class="ad-sm-7">
-	<div id="advert">
-	  <h1>Maria es me mama</h1>
-	</div>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="panel panel-default">
-    <div class="panel2">
-      <div class="container"> 
-	<div class="row header">
-	  <div class="col-sm-12">
-	    <h2 class="featurette-heading">Samuel Ulloa, a handy man of population analytics. Maps,&nbsp;statistics, surveys... <span class="text-muted">You&nbsp;got&nbsp;it!</span></h2>
-	    <p class="lead">I have worked in bioinformatics, public health, medicine, and politics. Better call Samuel</p>
-	    <p id="para2">Is this red?</p>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="col-sm-5">
-	    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis placerat porta. Curabitur pulvinar enim enim, vel iaculis massa. Vivamus at egestas metus. Suspendisse rutrum commodo sem eget semper. Integer vel consequat leo. Vivamus at enim enim, sed faucibus velit. Aliquam adipiscing, lacus quis sodales egestas, diam turpis vestibulum felis, non suscipit sem est a nulla. Sed non massa dolor. Etiam convallis enim non justo dictum interdum porta in nisl. Etiam commodo turpis ac felis ultrices accumsan.This graph shows my mad skills dfadfjasfkasdjf lorem ipsum siad i am a meta mers /b dfadfaldkjlkfaldknf /b slfjaldfjals</p>
-	  </div>
-	  <div class="col-sm-7">
-	    <img class="img-responsive" src="http://imgur.com/oSRpepl.png">
-	  </div>
-	</div>
-      </div>
-
-	<!-- <div class="row pitch">
-	  <div class="col-sm-5 actions">
-	    <div class="col-sm-8 col-sm-offset-2 social">
-	      <div class="coinbase">
-		<a class="coinbase-button" data-code="f419036293e6f7e36066c8b2e76779f7" data-button-style="custom_large" 
-		   href="https://coinbase.com/checkouts/f419036293e6f7e36066c8b2e76779f7">Pay With Bitcoin</a>
-	      </div>
-	      <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-	      <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-		<a class="addthis_button_preferred_1"></a>
-		<a class="addthis_button_preferred_2"></a>
-		<a class="addthis_button_compact"></a>
-		<a class="addthis_counter addthis_bubble_style"></a>
-	      </div>
-	      <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-	      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-524927a97bef6185"></script>
-	    </div>
-	  </div>
-	</div> -->
-    </div>
-  </div> <!-- panel2-->
-  <!-- Beyond this part the marketing copy begins. -->
-  <!-- https://developer.moziilla.org/en-US/docs/Web/CSS/text-align -->
-  <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-  <!-- http://placehold.it -->
-  <div class="panel panel-default">
-    <div class="panel3">
-      <div class="container"> 
-	<div class="row header">
-	  <div class="col-sm-5 copy">
-	    <p>
-	      Vivicheck is a smart software that assists in the diagnosis of the flu and cold. By inputting key 
-	      medical information, Vivicheck can produce a diagnosis with a level of significance, sensitivity, and
-	      specificity. Vivicheck will rely on information recorded by a smart mobile device and a picture. 
-	    </p>
-	  </div>
-	</div>
-	<div class="row section2">
-	  <div class="col-sm-5 col-sm-offset-1 copy copy-right">
-	    <p>
-	      Donations will be used to produce the user interface and to develop methods for modern levels of
-	      sensitivity and specificity. Vivicheck will be one of the first in mobile diagnostics reducing the costs
-	      of healthcare for people. Vivicheck will connect people with a positive diagnosis to a pharmacist to 
-	      obtain an appropriate medication to treat their illness. We hope to expand Vivichecks capabilities for
-	      several other diseases including bronchitis and calculating risk ratios for chronic disorders or 
-	      lethal diseases.
-	    </p>
-	  </div>
-	  <div class="col-sm-5 asset">
-	    <!--	<img class="img-polaroid" src="https://www.cellscope.com/assets/img_home_intro_device-f892c783530b711ae1c7e2bd33cd4ea9.jpg"> -->
-	    <img class="img-responsive" src="http://placehold.it/480x300">
-	  </div>
-	</div>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel4">
-      <div class="container"> 
-	<div class="row header">
-	  <div class="col-sm-5 copy">
-	    <p>
-	      Vivicheck is a smart software that assists in the diagnosis of the flu and cold. By inputting key 
-	      medical information, Vivicheck can produce a diagnosis with a level of significance, sensitivity, and
-	      specificity. Vivicheck will rely on information recorded by a smart mobile device and a picture. 
-	    </p>
-	  </div>
-	</div>
-	<div class="row section2">
-	  <div class="col-sm-5 col-sm-offset-1 copy copy-right">
-	    <p>
-	      Donations will be used to produce the user interface and to develop methods for modern levels of
-	      sensitivity and specificity. Vivicheck will be one of the first in mobile diagnostics reducing the costs
-	      of healthcare for people. Vivicheck will connect people with a positive diagnosis to a pharmacist to 
-	      obtain an appropriate medication to treat their illness. We hope to expand Vivichecks capabilities for
-	      several other diseases including bronchitis and calculating risk ratios for chronic disorders or 
-	      lethal diseases.
-	    </p>
-	  </div>
-	  <div class="col-sm-5 asset">
-	    <!--	<img class="img-polaroid" src="https://www.cellscope.com/assets/img_home_intro_device-f892c783530b711ae1c7e2bd33cd4ea9.jpg"> -->
-	    <img class="img-responsive" src="http://placehold.it/480x300">
-	  </div>
-	</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-  <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-  <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
   <div class="container">
-    <div class="row faq">
-      <div class="col-sm-10 col-sm-offset-1">
-	<h3>FAQ</h3>
-	<div class="accordion" id="accordion2">
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" 
-		 data-parent="#accordion2" href="#collapseOne"> How much will Vivicheck cost?
-	      </a>
-	    </div>
-	    <div id="collapseOne" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		Vivicheck will be a downloadable app costing $1.99 for a download in the play store and istore.
-		There is no charge per check up.
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse"
-		 data-parent="#accordion2" href="#collapseTwo">
-		How long will a Vivicheck up take?
-	      </a>
-	    </div>
-	    <div id="collapseTwo" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		Vivicheck ups take about 5 minutes in total.
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse"
-		 data-parent="#accordion3" href="#collapseThree">
-		Do I need a doctor to interpret results for me and obtain a prescription?
-	      </a>
-	    </div>
-	    <div id="collapseThree" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		Vivicheck will provide the interpretations instantly. Results should be used to obtain an
-		appropriate treatment.
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse"
-		 data-parent="#accordion4" href="#collapseFour">
-		When will Vivicheck launch?
-	      </a>
-	    </div>
-	    <div id="collapseFour" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		We will be releasing a public version of the Vivicheck mobile app in Spring 2014.
-	      </div>
-	    </div>
-	  </div>
+    <div class="panel" id="panel1">
+      <div class="row" id="advert">
+	<div class="col-md-12" id="adtext">
+	  <h1 class="heads">Get to know your people</h1>
+	  <p class="para">We analyze and collect data about persons, cities and any networked groups.</p>
 	</div>
       </div>
     </div>
-    <!-- Not crucial, but we put this uner a CC By-SA 3.0 license. -->
-    <!-- http://creativecommons.org/licenses/ -->
-    <div class="row footer">
-      <div class="col-sm-12">
-	<p>This work is licensed under 
-	  the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0
-	  </a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
+    <div class="panel panel-default" id="panel2">
+      <div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+	  <h1 class="heads center"><span class="bigbold">Big data</span> is so big that you are probably letting a lot of yours become outdated.</p>
+	</div>
+      </div>
+      <div class="row" style="padding-top: 10px">
+	<div class="col-sm-8 col-sm-offset-2">
+	  <h1 class="heads center">Well don't. We work with healthcare, epidemiology, <span class="shrinking">policy, <span class="shrinking">political campaigns, <span class="shrinking">validity, <span class="shrinking">marketing, <span class="shrinking">you get the picture.</span></span></span></span></span></p>
+	</div>
+      </div>
+      <div class="row" style="padding-top: 40px">
+	<div class="col-sm-4">
+	  <p class="heads center">Social Network Analysis</p>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/7/70/Social_Red.jpg" class="img-responsive imgpan2">
+	</div>
+	<div class="col-sm-4">
+	  <p class="heads center">GIS</p>
+	  <img src="http://www.esri.com/~/media/Images/Content/what-is-gis/graphics/earthquake_map_lg.jpg" class="img-responsive imgpan2">
+	</div>
+	<div class="col-sm-4">
+	  <p class="heads center">Modeling</p>
+	  <img src="http://www.ats.ucla.edu/stat/stata/examples/ara/_ara12_11.gif" class="img-responsive imgpan2">
+	</div>
       </div>
     </div>
+    <div class="panel panel-default" id="panel3">
+      <div class="row">
+      </div>
+    </div>
+    <div class="panel panel-default" id="panel4">
+      <!-- took out FAQ, may add later -->
+    </div>
+    <!--<div class="row footer">
+	    <div class="col-sm-12">
+	      <p>This work is licensed under 
+		the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0
+		</a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
+	    </div>
+    </div>  -->
   </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
