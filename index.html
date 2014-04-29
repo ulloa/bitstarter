@@ -5,365 +5,13 @@
     <title>Samuel Ulloa | Statistics | Maps | Epidemiology</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Independent researchers and statisticians that can analyze your data. We specialize in California, policy, and epidemiology. All organizations welcome.">
-    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.png">
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./public/home.css" type="text/css">
     <script src="http://code.angularjs.org/1.2.0-rc.3/angular.min.js"></script>
-    <style type="text/css">
-
-      /* Large desktop */
-
-      @media (min-width: 960px) {
-        .linediv-l {
-          border-right: 2px solid white;
-        }
-        .linediv-r {
-          border-left: 2px solid white;
-        }
-        .heads {
-          font-size: 32px;
-          font-weight: bold;
-        }
-        .para {
-          font-size: 19px;
-          font-weight: 300;
-        }
-
-      }
-      @media (max-width: 480px) {
-        .copy {
-          padding: 2.5% 10%;
-        }
-        .linediv-l {
-          border-bottom: 1px solid white;
-        }
-        .linediv-r {
-          border-top: 1px solid white;
-        }
-        .heads {
-          font-size: 19px;
-          font-weight: 700;
-        }
-        .para {
-          font-size: 13px;
-          font-weight: 400;
-        }
-      }        
-      @media (min-width: 481px) and (max-width: 768px) {
-        .heads {
-          font-size: 22px;
-          font-weight: 700;
-        }
-        .para {
-          font-size: 14px;
-          font-weight: 400;
-        }
-      }
-      @media (min-width: 769px) and (max-width: 959px) {
-        .heads {
-          font-size: 27px;
-          font-weight: 700;
-        }
-        .para {
-          font-size: 17px;
-          font-weight: 200;
-        }
-        .imgpan2 {
-          max-height: 30%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-
-      .p3p {
-        padding-top: 4px;
-        padding-left: 1px;
-      }
-
-
-      @media (min-width: 481px) {
-        #addvert{
-        position: relative;
-        float: left;
-        display: block;
-        height: 48%;
-        top: 52%;
-        width: 46%;
-        left: 5.5%;
-        color: white;
-        z-index: 1009;
-        }
-        #addtext{
-        display: block;
-        width: 94%;
-        height: 52%;
-        max-height: 300px;
-        max-width: 600px;
-        padding: 15px 20px 20px;
-        top: 40%;
-        background-color: rgba(15, 15, 15, .80);
-        border-radius: 30px;
-        margin-left: 3%;
-        }
-      }
-
-      @media (max-width: 480px) {
-        #addvert{
-        display: block;
-        position: relative;
-        float: left;
-        display: block;
-        height: 60%;
-        top: 40%;
-        color: white;
-        padding: 0 15px 20px;
-        padding-bottom: 20px;
-        }
-        #addtext{
-        top: 40%;
-        display: block;
-        width: 100%;
-        height: 50%;
-        max-height: 200px;
-        background-color: rgba(15, 15, 15, .80);
-        border-radius: 30px;
-        margin: 0px 0px;
-        }
-      }
-      /* Main body and headings */
-      html, body{height: 100%;}
-      body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Open Sans";
-      position: relative;
-      height: 100%;
-      }
-      .heading, .subheading {
-        font-family: "Helvetica Neue", Helvetica, 'Ubuntu', Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-      
-
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
-      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */
-      div.addthis_toolbox {
-      width: 180px;
-      margin: 0 0;
-      }
-      div.coinbase {
-      width: 200px;
-      margin: 0 auto;
-      }
-/*      @media (max-width: 979px) {
-      margin-bottom: 20px;
-      position: static;
-      }
-*/
-      @media (max-width: 768px) {
-        .navbar-fixed-top {
-          margin-left: -20px;
-          margin-right: -20px;
-        }
-        .bigbold {
-          font-weight: 700;
-          font-size: 30px;
-        }
-        .imgpan2 {
-          max-height: 20%;
-          min-width: 40%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-      @media (min-width: 769px) {
-        .bigbold {
-          font-weight: 700;
-          font-size: 46px;
-        }
-      }
-      
-      .shrinking {
-        font-weight: 600;
-        font-size: 85%;
-      }
-
-/*<!-- Unused navbar
-      .navbar-inner:after {
-      display: table;
-      content: "";
-      line-height: 0;
-      clear: both
-      }
-      .navbar-fixed-top {
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 1030;
-      }
-      .navbar {
-      overflow: visible;
-      }
--->*/
-      .center {
-      text-align: center;
-      }
-      .featurette-heading {
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: -1px;
-      }
-      .header {
-        margin-left: 0px;
-        padding: 0;
-      }
-      .container {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        width: 100%;
-        max-width: 9999px;
-        height: 100%;
-      }
-      .row {
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-        padding-top: 10px;
-      }
-
-      .panel {
-        margin-bottom: 0px;
-        border: 0px;
-        background-size: auto 100%;
-        background-position: center;
-        position: relative;
-        padding: 0px;
-        height: 100%;
-        overflow: hidden;
-      }
-      #panel1 {
-        background-color: #ffffff;
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
-        display: block;
-        color: rgb(250, 250, 250);
-        top: 0%;
-        background: url(http://i.imgur.com/bONOi81.jpg) no-repeat center center;
-
-/*        webkit-background-size: cover; */
-        background-size: cover;
-        z-index: 1000;
-        margin: 0px 0px -1px;
-        border: 0px;
-        padding: 0px 10px;
-        border-radius: 0;
-        overflow: hidden;
-      }
-      #panel2 {
-        height: auto;
-        background-color: #ffffff;
-        min-height: 100%;
-        display: block;
-        color: rgb(0, 0, 0);
-        margin: 0px 0px -1px;
-        border: 0px;
-        padding: 0px;
-        z-index: 900;
-        border-radius: 0;
-        overflow: hidden;
-      }
-      #panel3 {
-        height: 100%;
-        min-height: 100%;
-        display: block;
-        color: #000000;
-        margin: 0px 0px -1px;
-        border: 0px;
-        padding: 0px;
-        z-index: 800;
-        border-radius: 0;
-        overflow: hidden;
-      }
-      #rowyel {
-        display: block;
-        background-color: rgba(230, 220, 0, .80);
-      }
-      #rowora {
-        display: block;
-        background-color: rgba(228, 131, 32, .90);
-      }
-      #rowblu {
-        display: block;
-        background-color: rgba(49, 68, 150, .70);
-      }
-    
-      #panel4 {
-        background-color: rgb(99, 100, 102);
-        height: 50%;
-        min-height: 50%;
-        display: block;
-        color: #ffffff;
-        border: 0px;
-        margin: 0px 0px -1px;
-        padding: 0px;
-        z-index: 700;
-        border-radius: 0;
-        overflow: hidden;
-      }
-
-      .accordion{margin-bottom:20px;}
-      .accordion-group{margin-bottom:2px;border:1px solid #e5e5e5;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
-      .accordion-heading{border-bottom:0;}
-      .accordion-heading .accordion-toggle{display:block;padding:8px 15px;}
-      .accordion-toggle{cursor:pointer;}
-      .accordion-inner{padding:9px 15px;border-top:1px solid #e5e5e5;}
-    </style>
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -414,6 +62,36 @@
 	<img src="http://www.ats.ucla.edu/stat/stata/examples/ara/_ara12_11.gif" class="img-responsive imgpan2">
       </div>
     </div>
+    <div class="row">
+      <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
+      <div class="span5 actions">
+	<div class="span8 offset2">
+	  <p class="heads center" style="color:white;">Support my current research projects</p>
+	  <div class="statistics">
+	    <div class="span4">
+	      <!-- linediv-l and linediv-r give dividing lines that look different in horizontal 
+		   and vertical layouts, illustrating media queries. -->
+	      <div class="linediv-c">
+		<h3>Street sweeping project. Taking photos and analyzing dirt samples</h3>
+		<h3>0</h3> <p>backers</p>
+	      </div>
+	    </div>
+	    <div class="span4">
+	      <div class="linediv-c">
+		<h3>$0</h3> <p>of $12,000</p>
+		<p>Estimated completion date with current funding: 60 days</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="span8 offset2 social">
+	  <div class="coinbase">
+	    <a class="coinbase-button" data-code="f419036293e6f7e36066c8b2e76779f7" data-button-style="custom_large" href="https://coinbase.com/checkouts/f419036293e6f7e36066c8b2e76779f7">Pay With Bitcoin</a>
+	  </div>
+	  <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+	</div>
+      </div>
+    </div>
   </div>
   <div class="panel panel-default" id="panel3">
     <div class="row" style="height: 100%; padding-top: 0px">
@@ -454,19 +132,7 @@
 	<p class="para">Follow me <a href="https://www.twitter.com/samdwell" style="color:white"><u>@Samdwell</u></a></p>
       </div>
     </div>
-
-
-
-
-    <!-- took out FAQ, may add later -->
   </div>
-  <!--<div class="row footer">
-	    <div class="col-sm-12">
-	      <p>This work is licensed under 
-		the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0
-		</a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
-	    </div>
-    </div>  -->
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -477,7 +143,7 @@
   ga('create', 'UA-18889820-4', 'samuelulloa.com');
   ga('send', 'pageview');
 </script>
-<script src="http://getbootstrap.com/assets/js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
 </body>

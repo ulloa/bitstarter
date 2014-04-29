@@ -2,6 +2,7 @@ require('newrelic');
 var express = require('express');
 var app = express();
 app.use(express.logger());
+app.use("/public", express.static(__dirname + '/public'));
 
 var fs = require('fs');
 var htmlfile = "index.html";
