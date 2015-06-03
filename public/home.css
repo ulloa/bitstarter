@@ -18,6 +18,8 @@
 	min-height: 400px;
 	padding: 0px;
 	margin: 0px;
+	color: #000000;
+        border-radius: 30px;
     }
     .leftpad {
 	padding-right: 0px;
@@ -48,15 +50,17 @@
     }
     .col-projects {
 	min-height: 250px;
-	padding-left: 5%;
-	padding-right: 5%;
 	margin: 0px;
+	color: #000000;
+        border-radius: 30px;
     }
     .leftpad {
-
+	padding-left: 10%;
+	padding-right: 10%;
     }
     .rightpad {
-
+	padding-left: 10%;
+	padding-right: 10%;
     }
 }        
 @media (min-width: 481px) and (max-width: 768px) {
@@ -69,16 +73,18 @@
         font-weight: 400;
     }
     .col-projects {
-	min-height: 400px;
-	padding-left: 5%;
-	padding-right: 5%;
+	min-height: 250px;
 	margin: 0px;
+	color: #000000;
+        border-radius: 30px;
     }
     .leftpad {
-
+	padding-left: 10%;
+	padding-right: 10%;
     }
     .rightpad {
-
+	padding-left: 10%;
+	padding-right: 10%;
     }
 }
 @media (min-width: 769px) and (max-width: 959px) {
@@ -99,6 +105,8 @@
 	min-height: 400px;
 	padding: 0px;
 	margin: 0px;
+	color: #000000;
+        border-radius: 30px;
     }
     .leftpad {
 	padding-right: 0px;
@@ -114,7 +122,6 @@
 	padding-left: 0px;
 	margin-left: 0px;
     }
-
 }
 
 .p3p {
@@ -398,11 +405,11 @@ div.coinbase {
 #projects {
     background-color: rgb(68, 174, 184);
 }
-#test1 {
-    background: url(http://i.imgur.com/bONOi81.jpg) no-repeat center center;
+#project1 {
+    background: url(http://i.imgur.com/LKQwZkW.jpg) no-repeat center center;
 }
-#test2 {
-    background: url(http://i.imgur.com/bONOi81.jpg) no-repeat center center;
+#project2 {
+    background: url(http://i.imgur.com/qagF2zp.jpg) no-repeat center center;
 }
 
 .accordion{margin-bottom:20px;}
