@@ -19,7 +19,6 @@
 	padding: 0px;
 	margin: 0px;
 	color: #000000;
-        border-radius: 30px;
     }
     .leftpad {
 	padding-right: 0px;
@@ -52,7 +51,6 @@
 	min-height: 250px;
 	margin: 0px;
 	color: #000000;
-        border-radius: 30px;
     }
     .leftpad {
 	padding-left: 10%;
@@ -76,7 +74,6 @@
 	min-height: 250px;
 	margin: 0px;
 	color: #000000;
-        border-radius: 30px;
     }
     .leftpad {
 	padding-left: 10%;
@@ -106,7 +103,6 @@
 	padding: 0px;
 	margin: 0px;
 	color: #000000;
-        border-radius: 30px;
     }
     .leftpad {
 	padding-right: 0px;
@@ -403,7 +399,7 @@ div.coinbase {
     overflow: hidden;
 }
 #projects {
-    background-color: rgb(68, 174, 184);
+    background-color: white;
 }
 #project1 {
     background: url(http://i.imgur.com/LKQwZkW.jpg) no-repeat center center;
