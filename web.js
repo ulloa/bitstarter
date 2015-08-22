@@ -1,4 +1,3 @@
-require('newrelic');
 var morgan = require('morgan');
 var express = require('express');
 var app = express();

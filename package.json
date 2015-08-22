@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "express": "~4.8.0",
-    "newrelic": ">= 0.0.x"
   },
   "engines": {
     "node": "0.10.13",
